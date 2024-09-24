@@ -6,7 +6,9 @@ console.log(`value from const is`+browserVersion); // Refers to the constant
 function getBrowserVersion(browserName) {
 
       // usage of LET  
-    if (browserName == "Chrome")
+    //if (browserName == "Chrome") 
+    if (browserName.startsWith("Chrome"))
+    //
     {
         let bname 
         

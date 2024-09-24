@@ -9,7 +9,8 @@ firstName = 'Ramakrishnan', companyName = "Aquera"
 mobileNumber = 9940209247, isAutomation = true
 
 // print the data
-console.log('The First Name is '+firstName);
+console.log('The First Name is '+firstName)+firstName;
+
 console.log('The type of First name is '+typeof firstName);
 
 
