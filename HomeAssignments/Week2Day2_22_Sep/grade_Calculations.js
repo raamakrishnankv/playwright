@@ -1,7 +1,7 @@
-var studScore = 80
+var studScore = 8
 function StudentScore(score)
 {
-    switch (score) {
+    switch (true) {
       case (score >= 0 && score <= 40):
         console.log("Student is failed");
         break;
