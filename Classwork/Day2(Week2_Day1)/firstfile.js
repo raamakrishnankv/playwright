@@ -5,6 +5,7 @@
 
 
 
+
 // ------------- STRING Starts ------------
 var name, gender, num1
 
