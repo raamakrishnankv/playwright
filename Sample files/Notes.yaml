@@ -1,0 +1,371 @@
+
+
+----------- GIT Commands
+
+
+Git commands
+
+
+git status
+
+If files are showing in red colour then it means it is not tracked use the below command to track the files for changes
+
+
+git add .
+(What ever the files you have added and the code init all are ready to be pushed) - comes for tracking
+
+
+git commit -m ‘First commit’ 
+
+git push
+
+
+
+———————————
+git pull
+
+---------------------------
+
+https://dev.to/farhanacsebd/consolelog-shortcut-in-vs-code-5900
+
+Questions
+
+Week 1
+1. play install happened via command -- but via UI it was not happening
+2. We have only  startsWith -- can i have contains -- equals -- list of string functions
+3. console.log('The First Name is '+firstName)+firstName;
+    -- firstname is used in different manner -- Why no error at runtime
+4. 
+---------
+const { chromium } = require('playwright');
+
+(async () => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+  await page.goto('https://google.com');
+  console.log(await page.title());
+  await browser.close();
+})();
+-------------------
+
+Question ; Not launching the browser - but printing the title -how to launch the browser
+
+5. difference between .typeOf(varname) and typeOf varname
+    -- BOTH ARE SAME the WAY it was referred is different
+
+6.     
+
+
+var page = null
+log --- typeof page -> object
+
+var id = id1.toString().padStart(3,'0')
+
+big int to end with n 
+
+java script is a dev developed for client side validation
+
+var - used in older versions
+
+-- global by default from the place it was declared
+    -- Re-assignment
+    -- Scoping -- level of accebility
+        global scoping
+        Function scoping
+        block level scoping 
+    -- Hoisting
+    -- allow to redeclare the variable    
+
+var - old
+  - function scoped variable
+
+let - new versions
+    -- do not allow to declare same variable twice
+    - block scope variable
+    - able to alter at runtime
+const -- new versions
+`   does not alolow re-declare and reassignment
+    block scope variable
+    cant alter at runtime
+    const has to be assigned -- cant only declare
+    - immutable in nature
+
+
+
+ Sunday
+ -- String & Array - in Java Script
+
+ Javascript is a event based trigger  Arch
+
+
+Safari -- what is the javascript engine used
+
+
+primititve data type
+    - basic data type
+    - immutable in nature
+number
+string
+boolean
+undefined
+null
+
+non-primitive
+function
+objects
+arrays
+map
+
+Best practice for variable declare and naming conventions
+-- declare varibales and functions at the top -- best practice
+-- meaning full names
+-- a to z ; A to Z ; 0 to 9 and _ (Underscore)
+    emailId - camalcase
+    class -- PlayWrightClass
+    Dont start with numbers or underscore as variable names
+
+Hoisting -- Concept
+------------------------
+    means : moving the varibale declare to the top
+
+Variable Hoisting 
+    Example with var
+    declare the variable before using the code
+        // before Hoisting
+    console.log(userName) // undefined will be printed 
+    var userName = "test"    
+        // after Hoisting
+    var userName
+    userName = "test"        
+    console.log(userName) // print test
+    
+    Example with let 
+    console.log(name)
+    let name = "Ram" // Report Error message
+
+    let name
+    console.log(name)
+    name = "Ram" // Report Error message
+        -- error wil appear as varibale is refer before initilize
+        -- error will appear
+
+Hoisting will occur in var let and const
+    - var allow to refer
+    - let and const will not refer
+    cant access var before initialization
+
+Function Hoisting
+    Function _ to have a block of code 
+                - reuse of block of code
+                - code reusability
+                - to avoid repeatative task
+    Types of functions
+        Function declaration
+        Function Expression
+        Arrow Function    
+        Asynchrous function
+
+        IIFE () -- Immediately invoked function Expression        
+        Higher Order Function(callbacks)
+
+        Function Expression - you can refer a function to a variable
+
+Function declaration
+-----------------------
+Example:
+function userCred(userName)
+{
+    return 'hi $(userName)'
+}        
+
+console.log(userCred("Rama@test.com"));
+--
+Function declaration
+
+- const functionName = function (parameters) - No name -- anonomous function
+    { implementation }
+
+- const functionName = function <functionName>()
+        {implementation}
+
+Example:
+let user = function (name)
+{ console.log('Hi $(name)')}
+
+user('Rama') -- Calling a anonomous function
+
+
+-----
+    organization code
+    function initapp();
+
+    function initapp()
+    {
+        setupEvent();
+        loadData();
+
+    }
+
+    function     setupEvent()
+    {
+        // implementation
+    }
+    function loadData()
+    {
+        // implementation
+    }
+
+Arrow Functions
+    => Represent a function with flat arrow
+    => Consise way to write a function using =>
+    - mostly this function will be anonomous function
+
+Example 
+const functionName = (parameters) => { 
+function body }
+
+const name = () => 'hello Angel'
+console.log(name())
+
+
+Asychronous Function
+    Async function functionName (parameters) {
+    }
+
+ await - i need to clearly say that the function is a   Asychronous function
+
+ async function launchBrowser()
+ {
+    const browser = await.chrome.launch();
+
+ } 
+
+ Callbacck function
+ -- Its a function that will be passed as a argument to another function which will be executed after the process is completed
+
+ - A FUnction that is passed as a argument to another function and its executed after some operation has been completed
+
+ Example
+
+ function processuserInput(callback)
+ {
+    let name = prompt("Please enter your name")
+    callback (name)
+ }
+
+fuction displayName(name)
+{
+    alert(`hello` $(name))
+}
+
+// Calling the function
+
+processuserinput(displayName)
+
+
+Callback function -- we can have 3 at max
+
+Function Hoisting
+-- Function Declaration - completely hoisted including the function body
+-- you can call the function before it is declared in the code
+-- 
+Example
+- console.log(userCred());
+
+function userCred()
+{
+    return ` Hi Karthik'
+}
+
+
+Function Expression / Arrow Functions
+-- Only the variable declartions are hoisted, but the assigmnet (the actual function) is not hoisted
+-- You cannot tell the function before it is assigned
+-- 
+
+OPERATORS
+----------------
+
+1. Arithmetic operators
+        Add + ,
+        Sub -
+        Multiply *
+        Divide / - Quotient
+        modulus  % - reminder
+
+        increment operator - 
+            Post Increment - i++
+            Pre Increment - ++i
+
+       let value = 10
+       console.log(value++) -> 10
+            incremented by 1
+       console.log(++value) -> 12     
+
+
+Decerement operator
+-       Pre - i--
+        post - --i
+
+          let value = 30
+       console.log(value--) -> 30
+            incremented by 29
+       console.log(--value) -> 28      
+
+Assignment operators
+ = , +=, -=        
+ x=10
+ x+=5 ->> x = 15
+ x-=5 -> x= 10
+
+ Comparision operators
+    - boolean values -- true / false
+  && -- AND
+  || -- OR
+  == nor strict equals 
+  != not equal to
+  < <=
+  > >= 
+  === strict equality
+
+Strict equality 
+    Compare the data type + Compare the value
+
+non Strict equality 
+    Compare the value only
+
+console.log (1 === 1)- true
+
+console.log (1=== 5) - false
+
+1=='1' - true
+console.log ('chrome'=== 'Chrome') - false
+
+console.log (1 == true) - true
+        0 - false ; 1 - true 
+
+
+console.log (1 === true) - false
+
+
+console.log (true == 'true') - false
+            tue == 1 - false
+
+Logical operators
+
+&& -- AND
+|| -- OR
+!= 
+
+
+logical NOT
+
+!1 = 0
+!0 = 1
+
+Conditional Statements
+- perform actions based on the condition
+- if
+- if else
+- if else if
+
